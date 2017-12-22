@@ -1,0 +1,84 @@
+<div class="row">
+	<div class="col-md-12">
+		<h1 class="text-center">Духовые инструменты</h1>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<p>Духовы́е музыка́льные инструме́нты — музыкальные инструменты, представляющие собой деревянные, металлические и иные трубки различного устройства и формы, издающие музыкальные звуки в результате колебаний заключённого в них столба воздуха. Регистр духовых инструментов определяется их размерами: чем больше объём заключённого в инструменте столба воздуха, тем с меньшей частотой он колеблется и, следовательно, тем ниже издаваемый инструментом звук.</p>
+
+		<p>Изменение частоты колебаний воздушного столба в инструменте (а следовательно, и высоты звука) достигается двумя способами:</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Валторна</h2>
+		    </div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<img src="/images/wind/valtorna.jpg" alt="Валторна" class="img-inf">
+			</div>
+			<div class="col-md-6">
+				<div id="valtorna_inf"></div>
+				<a class="btn btn-default" id="valtorna_inf_btn">Развернуть</a>
+			</div>
+		</div>		
+	</div>
+	<div class="col-md-6">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Тромбон</h2>
+		    </div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<img src="/images/wind/trombon.jpg" alt="Тромбон"  class="img-inf">
+			</div>
+			<div class="col-md-6">
+				<div id="trombon_inf"></div>
+				<a class="btn btn-default" id="trombon_inf_btn">Развернуть</a>
+			</div>
+		</div>		
+	</div>
+</div>
+
+<script>
+$(document).ready(function () {
+    $('#valtorna_inf_btn').click(function () {
+       
+    })
+}).bind('ajaxError', function (e, xhr, opt) {
+  $('<p class="json_error">Ошибка считывания файла</p>').insertAfter('h1');
+  blink('.json_error');
+}).bind('ajaxSuccess', function (e, xhr, opt) {
+	alert("sdkjfksdj");
+    $('.json_error').detach();
+});
+
+$(document).ready(function () {
+    $('#trombon_inf_btn').click(function () {
+        
+    })
+}).bind('ajaxError', function (e, xhr, opt) {
+  $('<p class="json_error">Ошибка считывания файла</p>').insertAfter('h1');
+  blink('.json_error');
+}).bind('ajaxSuccess', function (e, xhr, opt) {
+    $('.json_error').detach();
+});
+
+function blink(selector) {
+  $(selector).fadeOut('slow',function() {
+    $(this).fadeIn('slow',function() {
+      blink(this);
+    });
+  });
+}
+</script>
+
+
+

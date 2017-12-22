@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Музыкальные инструменты</title>
+    
+    {{!-- <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"> --}}
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="/stylesheets/style.css">
+	<script data-main="/js/config" src="/js/require.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar_custom">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="/"><img src="/images/logo.png" class="logo-img"></a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="/">Музыкальные инструменты</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Виды <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="/keyboard">Клавишные</a></li>
+	            <li><a href="/string">Струнные</a></li>
+	            <li><a href="/wind">Духовые</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown pull-right">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Вход/Выход <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="/login">Войти</a></li>
+	            <li><a href="/register">Зарегистрироваться</a></li>
+	            <li><a href="/logout">Выйти</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+
+	    </div><!-- /.navbar-collapse -->
+	    
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<div class="wrapper">
+
+	    <article class="middle-col">
+	       <div class="container">
+	    	   	{{{body}}}
+	       </div>
+	    </article>
+
+	    <footer><p>&copy; KarinaTiurina 2017</p></footer>
+  </div>
+</body>
+</html>
